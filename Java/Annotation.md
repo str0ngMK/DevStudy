@@ -20,7 +20,7 @@
 > 사용자 정의 어노테이션
 - Java에서는 사용자가 직접 어노테이션을 정의할 수 있습니다.
 - `@interface`키워드를 사용하여 사용자 정의 어노테이션을 만들고 필요한 속성과 값을 추가할 수 있습니다.
-<pre>
+```java
 import java.lang.annotation.*;
   
 @Retention(RetentionPolicy.RUNTIME)
@@ -29,4 +29,4 @@ public @interface MyAnnotation {
     String value() default "";
     int count() default 0;
 }
-</pre>
+```
