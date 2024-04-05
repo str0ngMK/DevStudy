@@ -25,7 +25,7 @@
 <br>
 
 ### Example
-<pre>
+```java
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
@@ -33,19 +33,19 @@ import java.lang.annotation.*;
 public @interface MyAnnotation {
     String value() default ""; // 요소 1
     int count() default 0;     // 요소 2
-}
-</pre>
+```
+
 위의 예제에서는 `MyAnnotation`이라는 사용자 정의 어노테이션을 정의합니다.
 이 어노테이션은 메서드에 적용될 수 있으며, `value`와 `count`두 개의 요소를 가지고 있습니다.
 
 사용자 정의 어노테이션을 사용하려면 어노테이션을 정의한 후, 해당 어노테이션을 클래스, 메서드, 필드 등에 적용할 수 있습니다.
-<pre>
+```java
 public class MyClass {
     @MyAnnotation(value = "Hello", count = 3)
     public void myMethod() {
         // 메서드 내용
     }
 }
-</pre>
+```
 위의 예제에서는 `@MyAnnotation` 어노테이션을 `myMethod` 메서드에 적용하고, 요소 `value`와 `count`에 값을 할당했습니다.
 이렇게 어노테이션을 사용하면 나중에 리플렉션을 통해 이 정보를 읽을 수 있고, 해당 어노테이션을 사용하여 특별한 동작을 수행할 수 있습니다.
