@@ -1,4 +1,4 @@
-## Design Pattern
+## Design Patterns
 디자인 패턴(Design Pattern)은 소프트웨어 설계에서 자주 발생하는 문제를 해결하기 위한 일반적이고 재사용 가능한 솔루션을 제공합니다.
 디자인 패턴은 특정 문제를 해결하기 위한 일련의 지침과 규칙을 제공하며, 코드 재사용성과 유지보수성을 높이는 데 기여합니다.
 디자인 패턴은 크게 세 가지 유형으로 분류할 수 있습니다. 생성 패턴(Creational Patterns), 구조 패턴(Structural Patterns),
